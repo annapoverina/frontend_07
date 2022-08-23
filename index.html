@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=devise-width, initial-scale=0.1">
+        <title>Меню</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            ul {
+                display: flex;
+                padding-left: 0;
+                list-style: none;
+            }
+            li {
+                position: relative;
+            }
+            li:hover .submenu {
+                display: flex;
+            }
+            a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                background-color: rgb(255, 42, 42);
+                padding: 1em;
+                white-space: nowrap;
+            }
+            a:hover {
+                background-color: black;
+            }
+            .submenu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+            }
+        </style>
+    </head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li>
+                <a href="#">Menu 4</a>
+                <ul class="submenu">
+                    <li><a href="#">Submenu 4</a></li>
+                    <li><a href="#">Submenu 4</a></li>
+                    <li><a href="#">Submenu 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu 5</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
